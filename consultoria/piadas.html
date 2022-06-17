@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="Consultoria-title">Consultoria</h1>
+
+    <div class="consultoria">
+        <p><a href="index.html" target="_parent">Home</p></a>
+        <p><a href="cotacao.html" target="_parent">Cotacao</p></a>
+        <p><a href="#" target="_parent">Piadas</p></a>
+    </div>
+
+    <div class="consultoriapiadas">
+        <h1>Gerador de Piadas</h1>
+    </div>
+
+    <div class="consultoriacaixa">
+        <input type="button" value="Gerar Piada" id="consultoriabutao">
+    </div>
+
+    <div class="consultoriageradordepiada">
+
+    </div>
+
+    <script>
+
+    const url = `https://api.chucknorris.io/jokes/random`
+    
+    const consultoriabotao = document.getElementById('consultoriabutao') .addEventListener('click', async function () {
+    const botaodoconsultoria = document.getElementById('consultoriabutao')
+    botaodoconsultoria.setAttribute('value', 'Próxima')
+    const dados = await fetch(url)
+    const consultoriagerpiada = await dados.json()
+    const Consultoria = document.querySelector('.consultoriageradordepiada')
+    caixadoconsultoria.replaceChildren(consultoriagerpiada.value)
+  })
+
+
+    </script>
+</body>
+</html>

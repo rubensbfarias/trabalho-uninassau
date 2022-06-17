@@ -1,0 +1,65 @@
+#resultado {
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 350px;
+    background-color: lightyellow;
+    border: 1px solid grey ;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
+
+.consultoria {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.consultoria-title {
+    display: flex;
+    justify-content: center;
+}
+
+.consultarviacep {
+    display: grid;
+    justify-content: center;
+}
+
+#bitcoin_moedaconsultoria {
+    display: flex;
+    justify-content: center;
+    background: transparent url(bitcoin.jpg) no-repeat center;
+    background-size: 122px;
+    height: 122px;
+    margin-right: auto;
+    text-indent: -9999px;
+  }
+  
+  #bitcoin_cotacaoconsultoria {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .optionalconsultoria {
+    margin: 10px;
+  }
+
+.consultoriapiadas {
+    display: flex;
+    justify-content: center;
+}
+
+.consultoriacaixa {
+    display: flex;
+    justify-content: center;
+}
+
+.consultoriageradordepiada {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    margin-top: 10px;
+    background-color: lightyellow;
+    border: 1px solid grey ;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
